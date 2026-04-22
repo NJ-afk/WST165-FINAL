@@ -1,0 +1,97 @@
+body {
+    font-family: "Comic Sans MS", cursive;
+    margin: 0;
+    padding: 20px;
+
+    background-image: url("ASSIGNMENT1_IMG/bgimage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/** FLEX **/
+.top-section {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.photo-box {
+    width: 300px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.photo-box img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.intro-box {
+    flex: 1;
+    background: #fce8ef;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.intro-box h1 {
+    font-size: 50px;
+    color: #445b94;
+}
+
+.about-box {
+    background: #f7d9cd;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+
+.grid-boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.small-box,
+.large-box {
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 200px;
+}
+
+.likes {
+    background: #d8f0d6;
+}
+
+.learning{
+    background: #fff0b8;
+}
+
+.goals {
+    background: #dcecf2;
+    grid-row: span 2;
+}
+
+h2 {
+    color: #445b94;
+}
+
+li {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.5;
+}

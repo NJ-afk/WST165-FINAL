@@ -1,0 +1,86 @@
+body {
+  background: #e8f1e7;
+  background-attachment: fixed;
+  padding: 22px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.main-card {
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border: 1px solid rgba(255,255,255,0.4);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.intro {
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  color: #444;
+  line-height: 1.5;
+}
+
+.card {
+  background: #ffffff;
+  width: 100%;
+  max-width: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card.active {
+  transform: scale(1.1);
+  z-index: 10;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;    
+  object-position: center; 
+}
+
+.card h3 {
+  padding: 10px;
+  text-align: center;
+}
+
+.description {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.card.active .description {
+  max-height: 120px;
+  padding: 10px 15px 15px;
+  overflow-y: auto; 
+}

@@ -1,0 +1,86 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Succulent Gallery</title>
+  <link rel="stylesheet" href="ASSIGNMENT3.css" />
+</head>
+<body>
+
+  <div class="main-card">
+
+    <h1>My Haworthia Collection</h1>
+
+    <div class="intro">
+      <p>
+        These are my personal collection of Haworthias. I find it fascinating how they come in different forms and patterns. 
+        I especially love how their colors change when slightly sun-stressed. I personally took these photos one sunny afternoon, 
+        and it felt peaceful and satisfying capturing their beauty.
+      </p>
+    </div>
+
+    
+    <div class="gallery">
+
+      <div class="card" onclick="toggleCard(this)">
+        <img src="ASSIGNMENT3_IMG/PLANT%201.JPG" alt="Eagle's Claw">
+        <h3>Eagle's Claw</h3>
+        <div class="description">Eagle’s Claw Succulent (Haworthiopsis reinwardtii)
+          A compact succulent with upright, stacked green leaves covered in raised white spots. 
+          Its textured, clustered growth makes it a striking choice for indoor pots and succulent collections.
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <img src="ASSIGNMENT3_IMG/PLANT%204.JPG" alt="Haworthia Glauca Var Herrei">
+        <h3>Haworthia Glauca Var Herrei</h3>
+        <div class="description">Haworthia Glauca Var Herrei
+          A compact succulent with blue-green, frosted leaves arranged in tight rosettes. 
+          Native to South Africa, it is drought-tolerant, low-maintenance, and safe for pets.
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <img src="ASSIGNMENT3_IMG/PLANT%205.JPG" alt="Zebra Plant">
+        <h3>Zebra Plant</h3>
+        <div class="description">Zebra Plant (Haworthia fasciata)
+          A slow-growing succulent with bold white stripes and a rosette shape. 
+          A long-lasting and popular indoor plant.
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <img src="ASSIGNMENT3_IMG/PLANT%206.JPG" alt="Haworthia ‘Assid Starfish’">
+        <h3>Haworthia ‘Assid Starfish’</h3>
+        <div class="description">
+          A star-shaped succulent with textured leaves that can turn orange under bright light.
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <img src="ASSIGNMENT3_IMG/PLANT%207.JPG" alt="Haworthia Retusa">
+        <h3>Haworthia Retusa</h3>
+        <div class="description">
+          A compact succulent with translucent “windowed” leaves that absorb light beautifully.
+        </div>
+      </div>
+
+      <div class="card" onclick="toggleCard(this)">
+        <img src="ASSIGNMENT3_IMG/PLANT%2010.JPG" alt="Aloe–Haworthia Hybrid">
+        <h3>Aloe–Haworthia Hybrid</h3>
+        <div class="description">
+          Also known as Hankey Dwarf Aloe. A textured, low-maintenance succulent perfect for beginners.
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    function toggleCard(card) {
+      card.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
